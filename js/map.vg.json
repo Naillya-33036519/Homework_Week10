@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "State Wise Tourism Rates in Malaysia",
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Naillya-33036519/FIT3179/main/js/output.topojson",
+        "format": {"type": "topojson", "feature": "my"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.8
+      },
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/Naillya-33036519/FIT3179/main/data/Total_Visitors_Millions.csv",
+              "format": {"type": "csv"}
+            },
+            "key": "State",
+            "fields": ["Visitors", "Scaled_Visitors"]
+          }
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "Scaled_Visitors",
+          "type": "quantitative",
+          "title": "Scaled Visitors",
+          "scale": {"scheme": "blues"}
+        },
+        "tooltip": [
+          {"field": "properties.name", "type": "nominal", "title": "State"},
+          {"field": "Visitors", "type": "quantitative", "title": "Visitors in Millions"},
+          {"field": "Scaled_Visitors", "type": "quantitative", "title": "Visitors (Scaled)"}
+        ]
+      }
+    }
+  ]
+}
