@@ -126,7 +126,7 @@
   "encoding": {
     "x": {
       "field": "Year",
-      "type": "ordinal",
+      "type": "quantitative",
       "title": "Year",
       "labelAngle":0,
       "axis": {
