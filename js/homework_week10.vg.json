@@ -128,11 +128,11 @@
       "field": "Year",
       "type": "ordinal",
       "title": "Year",
-      "labelAngle":0,
       "format":"d",
       "axis": {
         "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
         "labelOverlap": "parity",
+        "labelAngle":0,
         "labelPadding": 10
       }
     },
@@ -149,7 +149,8 @@
       "field": "Country",
       "type": "nominal",
       "scale": {
-        "scheme": "category10"
+        "domain": ["China", "India", "United States", "Brazil", "Nigeria"],
+        "range":["#ff7f0e","#2ca02c","#9467bd","#1f77b4","#d62728"]
       },
       "legend": {
         "title": "Country"
