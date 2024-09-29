@@ -129,7 +129,8 @@
       "type": "quantitative",
       "title": "Year",
       "labelAngle":180,
-      "format":"d",
+      "format":"",
+      "formatType": "quantitative"
       "axis": {
         "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
         "labelOverlap": "parity",
@@ -142,7 +143,7 @@
       "title": "Population (million)",
       "axis": {
         "tickCount": 10,
-        "grid": true
+        "grid": false
       }
     },
     "color": {
