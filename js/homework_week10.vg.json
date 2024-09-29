@@ -141,7 +141,7 @@
       "title": "Population (million)",
       "axis": {
         "tickCount": 10,
-        "grid": true
+        "grid": false
       }
     },
     "color": {
