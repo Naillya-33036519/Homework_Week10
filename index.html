@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizations: Exploring the Interplay Between Global Population Growth and State-wise Tourism Rates in Malaysia</title>
+  
+  <!-- Import Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Naillya-33036519/FIT3179/refs/heads/homework_week9/css/styles.css" media="all">
 
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* Set font to sans-serif */
+      margin: 20px;
+      text-align: center; /* Center text in the body */
+    }
+    h1 {
+      font-size: 24px; /* Increase title size */
+      margin-bottom: 20px; /* Space between title and visualizations */
+    }
+    .visualization-container {
+      margin: 40px auto; /* Center the visualizations */
+      width: 80%; /* Set a width for the visualizations */
+    }
+    .visualization {
+      display: flex; /* Use Flexbox for centering */
+      justify-content: center; /* Center horizontally */
+    }
+    .annotation {
+      font-size: 14px; /* Set size for annotations */
+      margin-bottom: 10px; /* Space below the annotation */
+      text-align: center; /* Center the text */
+    }
+  </style>
+</head>
+<body>
+  <h1>Exploring the Interplay Between Global Population Growth and State-wise Tourism Rates in Malaysia</h1> <!-- Common Title -->
+
+  <div class="visualization-container">
+    <div class="annotation">
+      Malaysia's tourism landscape is diverse, with each state offering unique attractions. From the bustling city life of Kuala Lumpur to the pristine beaches of Langkawi and the cultural richness of Penang, tourism rates vary significantly across regions. Understanding these state-wise dynamics helps identify areas for development and investment, ensuring that tourism can contribute to local economies while preserving cultural and natural resources.
+    </div>
+    <div class="visualization" id="choropleth_map"></div>
+  </div>
+
+  <div class="visualization-container">
+    <div class="annotation">
+      The global population has seen unprecedented growth from 1950 to 2020, expanding from approximately 2.5 billion to nearly 7.8 billion. This surge has profound implications for resource management, urbanization, and economic development worldwide. In the context of Malaysia, this trend influences tourism patterns, as a larger global population increases the potential for travel and cultural exchange, impacting the country's tourism strategy and infrastructure planning.
+    </div>
+    <div class="visualization" id="population_growth"></div>
+  </div>
+
+  <script type="text/javascript">
+    // Embed the first visualization (choropleth map)
+    var spec2 = "https://raw.githubusercontent.com/Naillya-33036519/FIT3179/refs/heads/homework_week9/js/map.vg.json";  
+    vegaEmbed('#choropleth_map', spec2).then(function(result) {
+      console.log("Map loaded successfully");
+    }).catch(function(error) {
+      console.error("Error loading the map: ", error);
+    });
+
+    // Embed the second visualization (global population growth)
+    var populationGrowthSpec = "https://raw.githubusercontent.com/Naillya-33036519/FIT3179/refs/heads/homework_week9/js/homework_week10.vg.json";
+    vegaEmbed('#population_growth', populationGrowthSpec).then(function(result) {
+      console.log("Population growth chart loaded successfully");
+    }).catch(function(error) {
+      console.error("Error loading population growth chart: ", error);
+    });
+  </script>
+</body>
+</html>
