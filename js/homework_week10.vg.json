@@ -175,8 +175,7 @@
       "mark": {
         "type": "text",
         "color": "red",
-        "fontSize": 12,
-        "fontWeight": "bold",
+        "fontSize": 12
         "align": "left",
         "dx": 5,
         "dy": -10
@@ -203,8 +202,7 @@
       "mark": {
         "type": "text",
         "color": "red",
-        "fontSize": 12,
-        "fontWeight": "bold",
+        "fontSize": 12
         "align": "left",
         "dx": 5,
         "dy": -10
