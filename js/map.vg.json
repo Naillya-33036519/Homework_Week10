@@ -37,8 +37,8 @@
         },
         "tooltip": [
           {"field": "properties.name", "type": "nominal", "title": "State"},
-          {"field": "Visitors", "type": "quantitative", "title": "Visitors in Millions"},
-          {"field": "Scaled_Visitors", "type": "quantitative", "title": "Visitors (Scaled)"}
+          {"field": "Visitors", "type": "quantitative", "title": "Visitors in Millions","format": ","},
+          {"field": "Scaled_Visitors", "type": "quantitative", "title": "Visitors (Scaled)","format": ","}
         ]
       }
     }
