@@ -41,6 +41,27 @@
           {"field": "Scaled_Visitors", "type": "quantitative", "title": "Visitors (Scaled)","format": ","}
         ]
       }
+    },
+    {
+      "data": {
+        "values": [
+          {"State": "Selangor", "lat": 3.0738, "long": 99.6183, "label": "Highest Tourism Rate"},
+          {"State": "Perlis", "lat": 6.6408, "long": 100.1983, "label": "Lowest Tourism Rate"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": -10,
+        "dx": 10,
+        "fontSize": 10,
+
+        "color": "red"
+      },
+      "encoding": {
+        "longitude": {"field": "long", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "label", "type": "nominal"}
+      }
     }
   ]
 }
