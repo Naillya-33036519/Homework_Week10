@@ -129,7 +129,6 @@
             "labelAngle": 0,
             "labelPadding": 10,
             "grid":false
-
           }
         },
         "y": {
@@ -175,7 +174,7 @@
       "mark": {
         "type": "text",
         "color": "red",
-        "fontSize": 12
+        "fontSize": 12,
         "align": "left",
         "dx": 5,
         "dy": -10
@@ -202,7 +201,7 @@
       "mark": {
         "type": "text",
         "color": "red",
-        "fontSize": 12
+        "fontSize": 12,
         "align": "left",
         "dx": 5,
         "dy": -10
