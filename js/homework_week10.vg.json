@@ -65,101 +65,85 @@
   ],
   "layer": [
     {
-      "layer": [
-        {
-          "mark": "line",
-          "encoding": {
-            "x": {
-              "field": "Year",
-              "type": "ordinal",
-              "title": "Year",
-              "axis": {
-                "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
-                "labelOverlap": "parity",
-                "labelAngle": 0,
-                "labelPadding": 10
-              }
-            },
-            "y": {
-              "field": "Population (million)",
-              "type": "quantitative",
-              "title": "Population (million)",
-              "scale": {"type": "linear"}
-            },
-            "color": {
-              "field": "Country",
-              "type": "nominal",
-              "scale": {
-                "domain": [
-                  "China",
-                  "India",
-                  "United States",
-                  "Brazil",
-                  "Nigeria"
-                ],
-                "range": ["#ff7f0e", "#2ca02c", "#9467bd", "#1f77b4", "#d62728"]
-              },
-              "legend": {"title": "Country"}
-            },
-            "tooltip": [
-              {"field": "Country", "title": "Country"},
-              {"field": "Year", "title": "Year"},
-              {"field": "Population (million)", "title": "Population (million)"}
-            ]
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+            "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
+            "labelOverlap": "parity",
+            "labelAngle": 0,
+            "labelPadding": 10
           }
         },
-        {
-          "mark": {
-            "type": "point",
-            "opacity": 1,
-            "filled": true,
-            "size": 100
+        "y": {
+          "field": "Population (million)",
+          "type": "quantitative",
+          "title": "Population (million)",
+          "scale": {"type": "linear"}
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "scale": {
+            "domain": ["China", "India", "United States", "Brazil", "Nigeria"],
+            "range": ["#ff7f0e", "#2ca02c", "#9467bd", "#1f77b4", "#d62728"]
           },
-          "encoding": {
-            "x": {
-              "field": "Year",
-              "type": "ordinal",
-              "title": "Year",
-              "axis": {
-                "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
-                "labelOverlap": "parity",
-                "labelAngle": 0,
-                "labelPadding": 10
-              }
-            },
-            "y": {
-              "field": "Population (million)",
-              "type": "quantitative",
-              "title": "Population (million)",
-              "scale": {"type": "linear"},
-              "axis": {
-                "grid": false,
-                "tickCount": 10
-              }
-            },
-            "color": {
-              "field": "Country",
-              "type": "nominal",
-              "scale": {
-                "domain": [
-                  "China",
-                  "India",
-                  "United States",
-                  "Brazil",
-                  "Nigeria"
-                ],
-                "range": ["#ff7f0e", "#2ca02c", "#9467bd", "#1f77b4", "#d62728"]
-              },
-              "legend": null
-            },
-            "tooltip": [
-              {"field": "Country", "title": "Country"},
-              {"field": "Year", "title": "Year"},
-              {"field": "Population (million)", "title": "Population (million)"}
-            ]
+          "legend": {"title": "Country"}
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "Year", "title": "Year"},
+          {"field": "Population (million)", "title": "Population (million)"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "opacity": 1,
+        "filled": true,
+        "size": 100
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+            "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
+            "labelOverlap": "parity",
+            "labelAngle": 0,
+            "labelPadding": 10
           }
-        }
-      ]
+        },
+        "y": {
+          "field": "Population (million)",
+          "type": "quantitative",
+          "title": "Population (million)",
+          "scale": {"type": "linear"},
+          "axis": {
+            "grid": false,
+            "tickCount": 10
+          }
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "scale": {
+            "domain": ["China", "India", "United States", "Brazil", "Nigeria"],
+            "range": ["#ff7f0e", "#2ca02c", "#9467bd", "#1f77b4", "#d62728"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "Year", "title": "Year"},
+          {"field": "Population (million)", "title": "Population (million)"}
+        ]
+      }
     },
     {
       "mark": {
