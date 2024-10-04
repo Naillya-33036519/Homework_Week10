@@ -149,7 +149,12 @@
             "domain": ["China", "India", "United States", "Brazil", "Nigeria"],
             "range": ["#ff7f0e", "#2ca02c", "#9467bd", "#1f77b4", "#d62728"]
           }
-        }
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "Year", "title": "Year"},
+          {"field": "Population (million)", "title": "Population (million)"}
+        ]
       }
     },
     {
@@ -172,6 +177,26 @@
     },
     {
       "mark": {
+        "type": "circle",
+        "color": "red",
+        "size": 40
+      },
+      "encoding": {
+        "x": {"datum": 2020},
+        "y": {"datum": 1439.32},
+        "tooltip": [
+          {"value": "Highest Population"},
+          {"value": "Country: China"},
+          {"value": "Population: 1439.32 million"},
+          {"value": "Year: 2020"}
+        ]
+      },
+      "transform": [
+        {"filter": "continent == 'All'"}
+      ]
+    },
+    {
+      "mark": {
         "type": "text",
         "color": "red",
         "fontSize": 12,
@@ -183,6 +208,26 @@
         "x": {"datum": 2020},
         "y": {"datum": 206.14},
         "text": {"value": "Lowest Population: Nigeria (2020)"}
+      },
+      "transform": [
+        {"filter": "continent == 'All'"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "color": "red",
+        "size": 40
+      },
+      "encoding": {
+        "x": {"datum": 2020},
+        "y": {"datum": 206.14},
+        "tooltip": [
+          {"value": "Lowest Population"},
+          {"value": "Country: Nigeria"},
+          {"value": "Population: 206.14 million"},
+          {"value": "Year: 2020"}
+        ]
       },
       "transform": [
         {"filter": "continent == 'All'"}
