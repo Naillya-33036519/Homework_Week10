@@ -75,14 +75,22 @@
             "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
             "labelOverlap": "parity",
             "labelAngle": 0,
-            "labelPadding": 10
+            "labelPadding": 10,
+            "grid": false // Disable grid lines for X-axis
           }
         },
         "y": {
           "field": "Population (million)",
           "type": "quantitative",
           "title": "Population (million)",
-          "scale": {"type": "linear"}
+          "scale": {"type": "linear"},
+          "axis": {
+            "grid": false, // Disable grid lines for Y-axis
+            "tickCount": 10, // Set the number of ticks for Y-axis
+            "labels": true, // Show labels on the left side
+            "ticks": true, // Show ticks on the left side
+            "orient": "left" // Ensure Y-axis is on the left
+          }
         },
         "color": {
           "field": "Country",
@@ -116,7 +124,10 @@
             "values": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020],
             "labelOverlap": "parity",
             "labelAngle": 0,
-            "labelPadding": 10
+            "labelPadding": 10,
+            "grid": false, // Disable grid lines for X-axis
+            "orient":"bottom"
+
           }
         },
         "y": {
@@ -125,8 +136,11 @@
           "title": "Population (million)",
           "scale": {"type": "linear"},
           "axis": {
-            "grid": false,
-            "tickCount": 10
+            "grid": false, // Disable grid lines for Y-axis
+            "tickCount": 10,
+            "labels": true,
+            "ticks": true,
+            "orient": "left" // Ensure Y-axis is on the left
           }
         },
         "color": {
@@ -135,30 +149,9 @@
           "scale": {
             "domain": ["China", "India", "United States", "Brazil", "Nigeria"],
             "range": ["#ff7f0e", "#2ca02c", "#9467bd", "#1f77b4", "#d62728"]
-          },
-          "legend": null
-        },
-        "tooltip": [
-          {"field": "Country", "title": "Country"},
-          {"field": "Year", "title": "Year"},
-          {"field": "Population (million)", "title": "Population (million)"}
-        ]
+          }
+        }
       }
-    },
-    {
-      "mark": {
-        "type": "circle",
-        "color": "red",
-        "strokeWidth": 1.5
-      },
-      "encoding": {
-        "x": {"datum": 2020},
-        "y": {"datum": 1439.32},
-        "y2": {"datum": 1300}
-      },
-      "transform": [
-        {"filter": "continent == 'All'"}
-      ]
     },
     {
       "mark": {
@@ -173,21 +166,6 @@
         "x": {"datum": 2020},
         "y": {"datum": 1439.32},
         "text": {"value": "Highest Population: China (2020)"}
-      },
-      "transform": [
-        {"filter": "continent == 'All'"}
-      ]
-    },
-    {
-      "mark": {
-        "type": "circle",
-        "color": "red",
-        "strokeWidth": 1
-      },
-      "encoding": {
-        "x": {"datum": 2020},
-        "y": {"datum": 206.14},
-        "y2": {"datum": 100}
       },
       "transform": [
         {"filter": "continent == 'All'"}
