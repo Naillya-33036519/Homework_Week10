@@ -84,7 +84,7 @@
               "field": "Population (million)",
               "type": "quantitative",
               "title": "Population (million)",
-              "scale": {"type": "linear" }
+              "scale": {"type": "linear"}
             },
             "color": {
               "field": "Country",
@@ -131,10 +131,10 @@
               "field": "Population (million)",
               "type": "quantitative",
               "title": "Population (million)",
-              "scale": {"type": "linear" },
+              "scale": {"type": "linear"},
               "axis": {
                 "grid": false,
-                "tickCount":10
+                "tickCount": 10
               }
             },
             "color": {
