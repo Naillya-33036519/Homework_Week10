@@ -84,7 +84,7 @@
               "field": "Population (million)",
               "type": "quantitative",
               "title": "Population (million)",
-              "scale": {"type": "linear" },
+              "scale": {"type": "linear" }
             },
             "color": {
               "field": "Country",
