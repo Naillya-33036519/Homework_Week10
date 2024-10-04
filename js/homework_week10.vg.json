@@ -76,7 +76,7 @@
             "labelOverlap": "parity",
             "labelAngle": 0,
             "labelPadding": 10,
-            "grid": false // Disable grid lines for X-axis
+            "grid": false
           }
         },
         "y": {
@@ -85,11 +85,11 @@
           "title": "Population (million)",
           "scale": {"type": "linear"},
           "axis": {
-            "grid": false, // Disable grid lines for Y-axis
-            "tickCount": 10, // Set the number of ticks for Y-axis
-            "labels": true, // Show labels on the left side
-            "ticks": true, // Show ticks on the left side
-            "orient": "left" // Ensure Y-axis is on the left
+            "grid": false,
+            "tickCount": 10,
+            "labels": true,
+            "ticks": true,
+            "orient": "left"
           }
         },
         "color": {
@@ -125,9 +125,8 @@
             "labelOverlap": "parity",
             "labelAngle": 0,
             "labelPadding": 10,
-            "grid": false, // Disable grid lines for X-axis
-            "orient":"bottom"
-
+            "orient": "bottom",
+            "grid": false
           }
         },
         "y": {
@@ -136,11 +135,11 @@
           "title": "Population (million)",
           "scale": {"type": "linear"},
           "axis": {
-            "grid": false, // Disable grid lines for Y-axis
+            "grid": false,
             "tickCount": 10,
             "labels": true,
             "ticks": true,
-            "orient": "left" // Ensure Y-axis is on the left
+            "orient": "left"
           }
         },
         "color": {
